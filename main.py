@@ -4,9 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 def get_days_since_start():
-    termo_starting_date = datetime.date(2022, 1, 1)
-    today = datetime.date.today()
-    return (today - termo_starting_date).days
+    return (datetime.date.today() - datetime.date(2022, 1, 1)).days
 
 
 def get_daily_word():
