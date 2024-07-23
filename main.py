@@ -6,14 +6,12 @@ from selenium.webdriver.common.keys import Keys
 def get_days_since_start():
     return (datetime.date.today() - datetime.date(2022, 1, 1)).days
 
-
 def get_daily_word():
     with open('words.txt', 'r') as f:
         lines = f.readlines()
         if get_days_since_start() <= len(lines):
             return lines[get_days_since_start() - 1].strip()
     return None
-
 
 def complete_termooo(word):
     driver = webdriver.Chrome()
