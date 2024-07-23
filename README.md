@@ -4,6 +4,8 @@
 
 This project automates the daily completion of the online word game Term.ooo. It uses the `selenium` library to interact with the website and input a word for each day.
 
+![Term.ooo Automation](media/readme.gif)
+
 ## Features
 
 - Calculates the number of days since January 1, 2022.
